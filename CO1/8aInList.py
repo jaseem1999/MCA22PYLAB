@@ -1,7 +1,6 @@
 #Store a list of first names. Count the occurrences of ‘a’ within the list.
 
-list_name = ["apple","banana","apple","cherry","apple","banana"]
-list_name_count = [i.count(x) for x in list_name for i in x if i in "a"]
+list_name = ["apple","banana","Mengo","cherry","apple"]
+list_a_count = [ x.count("a") for x in list_name]
 print("All list ",list_name)
-print("Count list ",list_name_count)
-
+print("Count list ",list_a_count)

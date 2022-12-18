@@ -1,3 +1,5 @@
+#Enter 2 lists of integers. Check(a) Whether list are of same length(b) whether list sums to same value(c) whether any value occur in both
+
 #Enter 2 lists of integers. Check 
 
 list1 = [1,2,3,4,5,6,7,8,9,10]
