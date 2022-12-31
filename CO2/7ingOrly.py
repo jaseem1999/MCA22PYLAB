@@ -2,7 +2,7 @@
 
 str1 = input("Enter the string : ")
 for i in str1:
-    if i == 'i' and str1[-3:] == 'ing':
+    if str1[-3:] == 'ing':
         print(str1+"ly")
         break
     else:
