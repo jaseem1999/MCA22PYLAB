@@ -22,7 +22,7 @@ class Bank:
         else:
             amount= int(input("Enter amount to withdraw: "))
             if amount > self.current_balance:
-                print("sorry, you have insufficient balance")
+                print(self.name , " sorry, you have insufficient balance")
             else:
                 self.current_balance -= amount
     def displayAccount(self):
