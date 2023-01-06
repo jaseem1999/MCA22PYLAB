@@ -12,7 +12,7 @@ class Rectangle:
         return 2 * (self.length + self.breadth)
 
 l = int(input("Enter object r1 length: "))
-b = int(input("Enter object r2 breadth: "))
+b = int(input("Enter object r1 breadth: "))
 r1 = Rectangle(l, b)
 l = int(input("Enter object r2 length: "))
 b = int(input("Enter object r2 breadth: "))
