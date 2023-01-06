@@ -8,14 +8,14 @@ class Bank:
         self.acNo = int(input("Enter account number: "))
         self.name = input("Enter name: ")
     def depositAccount(self):
-        if self.acNo == 0 and self.name == "":
+        if self.acNo == 0 or self.name == "":
             print("Please create account first")
         elif self.current_balance == 0:
             self.current_balance = int(input("Enter amount to deposit: "))
         else:
             self.current_balance += int(input("Enter amount to deposit: "))
     def withdrawAccount(self):
-        if self.acNo == 0 and self.name == "":
+        if self.acNo == 0 or self.name == "":
             print("Please create account first")
         elif self.current_balance == 0:
             print("sorry, you have no balance")
@@ -26,9 +26,12 @@ class Bank:
             else:
                 self.current_balance -= amount
     def displayAccount(self):
-        print("Account number: ", self.acNo)
-        print("Name: ", self.name)
-        print("Current balance: ", self.current_balance)
+        if self.name == "" or self.acNo == 0:
+            print("Please create account first")
+        else:
+            print("Account number: ", self.acNo)
+            print("Name: ", self.name)
+            print("Current balance: ", self.current_balance)
 
 b1 = Bank()
 
