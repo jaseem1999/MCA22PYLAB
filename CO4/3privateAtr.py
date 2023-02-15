@@ -1,28 +1,18 @@
 #Create a class Rectangle with private attributes length and width. Overload ‘<’ operator to compare the area of 2 rectangles.
-class Time:
-    __hour = 0
-    __minute = 0
-    __second = 0
 
-    def _init_(self):
-        self.__hour = int(input("Enter the hour:"))
-        self.__minute = int(input("Enter the minute:"))
-        self.__second = int(input("Enter the second:"))
+class rectangle:
+    def __init__(self):
+        self.__length = int(input("Enter the length:"))
+        self.__width = int(input("Enter the width:"))
 
-    def _add_(self, other):
-        h = self._hour+other._hour
-        m = self._minute+other._minute
-        s = self._second+other._second
-        if s > 60:
-            s = s-60
-            m = m+1
-        if m > 60:
-            m = m-60
-            h = h+1
-        print("Time is:", h, ":", m, ":", s)
+    def __lt__(self, other):
+        if self.__length*self.__width < other.__length*other.__width:
+            print("Area of rectangle 1 is less than rectangle 2")
+        else:
+            print("Area of rectangle 1 is greater than rectangle 2")
+    
+object1 = rectangle()
+object2 = rectangle()
+object1.__lt__(object2)
 
-
-obj1 = Time()
-obj2 = Time()
-obj1._add_(obj2)
 
